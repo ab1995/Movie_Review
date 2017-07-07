@@ -104,3 +104,26 @@ li.dropdown {
 #homeList{
 	
 }
+
+.screencast{
+	margin-top:90px;
+	margin-left:50px;
+	float:left;
+	
+	
+}
+.myarticle
+	 {
+	margin-top:50px;
+	padding-bottom:160px;
+    margin-left: 200px;
+	margin-right: 50px;
+}
+
+.wall_movie{
+    margin-top:20px;
+	margin-left:200px;
+	margin-right:200px;
+	background-color:#5c5d60;
+	margin-bottom:20px;
+}
