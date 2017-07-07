@@ -1,0 +1,106 @@
+ul {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color: #333;
+}
+
+li {
+    	float: left;
+}
+
+li a, .dropbtn {
+    	display: inline-block;
+    	color: white;
+    	text-align: center;
+    	padding: 34px 16px;
+    	text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+	color:#e6b91e;
+}
+
+li.dropdown {
+    	display: inline-block;
+}
+
+.dropdown-content {
+    	display: none;
+    	position: absolute;
+    	background-color: #f9f9f9;
+
+}
+
+.dropdown-content a {
+    	color: black;
+    	padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+    	text-align: left;
+}
+
+.dropdown-content a:hover {
+	color:#e6b91e
+}
+
+.dropdown:hover .dropdown-content {
+    	display: block;
+    	color: #e6b91e;
+}
+
+.class-label{
+	margin-left: 10px;
+	margin-bottom:0px;
+	color:#e6b91e;
+	font-family:Verdana;
+	font-style:normal;
+	font-size: 24px;
+	height:30px;
+}
+
+.label-line{
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:0px;
+	margin-bottom:2px;
+	border-top: 1px solid black;
+}
+
+.image-link:hover{
+	border-style: outset;
+	border-color:#e6b91e;
+	border-width:2px;
+}
+
+.search-bar{
+	padding: 34px 16px;
+}
+
+.sign-bar{
+	margin-right:0px;
+	padding: 5px 16px;
+	color:white;
+}
+
+.signup{
+
+}
+
+.wall{
+    margin-top:20px;
+	margin-left:100px;
+	margin-right:100px;
+	background-color:#5c5d60;
+	margin-bottom:20px;
+}
+.movie-table{
+	margin-left:10px;
+	margin-right:10px;
+	background-color:white;
+}
+
+#homeList{
+	
+}

@@ -2,134 +2,98 @@
 <html>
 <head>
  <title>IMDb - Movies Review</title>
-<style>
-ul {
-    	list-style-type: none;
-    	margin: 0;
-    	padding: 0;
-    	overflow: hidden;
-    	background-color: #333;
-}
-
-li {
-    	float: left;
-}
-
-li a, .dropbtn {
-    	display: inline-block;
-    	color: white;
-    	text-align: center;
-    	padding: 34px 16px;
-    	text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-	color:#e6b91e;
-}
-
-li.dropdown {
-    	display: inline-block;
-}
-
-.dropdown-content {
-    	display: none;
-    	position: absolute;
-    	background-color: #f9f9f9;
-
-}
-
-.dropdown-content a {
-    	color: black;
-    	padding: 12px 16px;
-   	text-decoration: none;
-   	display: block;
-    	text-align: left;
-}
-
-.dropdown-content a:hover {color:#e6b91e}
-
-.dropdown:hover .dropdown-content {
-    	display: block;
-    	color: #e6b91e;
-}
-
-.class-label{
-	margin-left: 140px;
-	color:#e6b91e;
-}
-
-.label-line{
-	margin-left:140px;
-	margin-right:140px;
-}
-
-.image-link:hover{
-	border-style: outset;
-	border-color:#e6b91e;
-	border-width:2px;
-}
-
-.search-bar{
-	padding: 34px 16px;
-}
-
-.sign-bar{
-	margin-right:140px;
-	padding: 5px 16px;
-	color:white;
-}
-
-</style> 
+ <link rel="stylesheet" href="index_css.css"></link>
 </head>
-<body bgcolor=#5c5d60>
+
+<body >
+
 <header >
 <div>
-
-<ul>
-	<li><img src="Images/imdbLogo.png" height=100, width=150><li>
-  	<li><a href="">Home</a></li>
-  	<li class="dropdown"><a href="">Movies</a>
-    		<div class="dropdown-content">
-      			<a href="#">Upcoming Movies</a>
-      			<a href="#">Movie Review</a>
-    		</div>
-  	</li>
-	<li>
-		<div class="search-bar">
-			<input type=text size=50 placeholder="Search Movie...">
-			<button><img src="Images/search.png" height=10px></button>
-		</div>
-	</li>
-	<li style="float:right;">
-		<div class="sign-bar">
-			Username:<input type="text" placeholder="emailID"><br><br>
-			Password: <input type="password" placeholder="********"><br>
-			<input type="Submit" value="Submit" style="align:right">
-		</div>
-	</li>	
-</ul>
+	<ul id="homeList">
+		<li><img src="Images/imdbLogo.png" height=100, width=150><li>
+		<li><a href="">Home</a></li>
+		<li class="dropdown"><a href="">Movies</a>
+				<div class="dropdown-content">
+					<a href="#">Upcoming Movies</a>
+					<a href="#">English Movies</a>
+					<a href="#">Hindi Movies</a>
+					<a href="#">TV Series</a>
+				</div>
+		</li>
+		
+		<li>
+			<div class="search-bar">
+				<input type=text size=50 placeholder="Search Movie...">
+				<button><img src="Images/search.png" height=10px></button>
+			</div>
+		</li>
+		<li style="float:right;">
+			<div class="signup" style="height:8px; margin-top:13px;">
+				<a href="" >Sign Up</a>
+			</div>	
+		</li>
+			<li style="float:right; ">
+				<div class="sign-bar">
+					<div style="height:8px;">Username:<input type="text" placeholder="emailID">&nbsp&nbsp&nbsp<input type="Submit" value="Submit" ></div>
+					<div style="height:8px;">Password: <input type="password" placeholder="********"><a href="" >Forgot Password?</a></div>
+				</div>
+		</li>
+	</ul>
 </div>
 </header>
 
-<h1 class="class-label">Latest Movies</h1>
-<hr class="label-line">
-<table align="center" cellpadding="20">
-	<tr>	
-		<td style="height=450px, width=500px"><a href=""><img src="Images/Dangal.jpg" height=300, width=300  class="image-link"></a></td>
-		<td style="height=450px, width=500px"><a href=""><img src="Images/Bahubali2.jpg" height=300, width=300  class="image-link"></a></td>
-		<td style="height=450px, width=500px"><a href=""><img src="Images/Sultan.jpg" height=300, width=300  class="image-link"></a></td>
-	</tr>
+<div class="wall">
+	<p style="height:1px;"></p>
+	<h1 class="class-label"  ">Upcoming Movies</h1>
+	<hr class="label-line">
+	<table  cellpadding="10" class="movie-table">
 		<tr>	
-		<td style="height=450px, width=500px"><a href=""><img src="Images/Sachin.jpg" height=300, width=300  class="image-link"></a></td>
-		<td style="height=450px, width=500px"><a href=""><img src="Images/HindiMedium.jpg" height=300, width=300  class="image-link"></a></td>
-		<td style="height=450px, width=500px"><a href=""><img src="Images/BankChor.jpg" height=300, width=300  class="image-link"></a></td>
-	</tr>
+			<td style="height=450px, width=400px"><a href=""><img src="Images/jagga.jpg" height=300, width=200  class="image-link"></a></td>
+			<td style="height=450px, width=400px"><a href=""><img src="Images/jab.jpg" height=300, width=200  class="image-link"></a></td>
+			<td style="height=450px, width=400px"><a href=""><img src="Images/guest.jpg" height=300, width=200  class="image-link"></a></td>
+			<td style="height=450px, width=400px"><a href=""><img src="Images/toilet.jpg" height=300, width=200  class="image-link"></a></td>
+			<td style="height=450px, width=400px"><a href=""><img src="Images/munna.jpg" height=300, width=200  class="image-link"></a></td>
+		</tr>
 
-</table>
-<footer style="background-color:#242729">
-<center>
-<font color=white>Copyright 2017 IMDb.com, Inc.</font>
-</center>
+	</table>
+
+	<h1 class="class-label" >Latest Hindi Movies</h1>
+	<hr class="label-line">
+	<table cellpadding="10" class="movie-table">
+		<tr>	
+			<td style="height=450px, width=400px"><a href=""><img src="Images/Dangal.jpg" height=300, width=200  class="image-link"></a></td>
+			<td style="height=450px, width=400px"><a href=""><img src="Images/Bahubali2.jpg" height=300, width=200  class="image-link"></a></td>
+			<td style="height=450px, width=400px"><a href=""><img src="Images/Sultan.jpg" height=300, width=200  class="image-link"></a></td>
+			<td style="height=450px, width=400px"><a href=""><img src="Images/Sachin.jpg" height=300, width=200  class="image-link"></a></td>
+			<td style="height=450px, width=400px"><a href=""><img src="Images/HindiMedium.jpg" height=300, width=200  class="image-link"></a></td>
+		</tr>
+
+	</table>
+
+
+
+	<h1 class="class-label">Latest English Movies</h1>
+	<hr class="label-line">
+	<table  cellpadding="10" class="movie-table">
+		<tr>	
+			<td style="height=450px, width=400px"><a href=""><img src="Images/spiderman.jpg" height=300, width=200  class="image-link"></a></td>
+			<td style="height=450px, width=400px"><a href=""><img src="Images/despicable.jpg" height=300, width=200  class="image-link"></a></td>
+			<td style="height=450px, width=400px"><a href=""><img src="Images/wonder.jpg" height=300, width=200  class="image-link"></a></td>
+			<td style="height=450px, width=400px"><a href=""><img src="Images/cars3.jpg" height=300, width=200  class="image-link"></a></td>
+			<td style="height=450px, width=400px"><a href=""><img src="Images/transformers.jpg" height=300, width=200  class="image-link"></a></td>
+		</tr>
+
+	</table>
+
+	<h1 class="class-label"></h1>
+
+</div>
+
+<footer style="background-color:#242729;" >
+	<center>
+		<font color=white>Copyright 2017 IMDb.com, Inc.</font>
+	</center>
 </footer>
+
 </body>
 </html>
