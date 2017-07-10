@@ -1,16 +1,18 @@
 .trending{
 	float:left;
 	background-color: #333;
-	margin-top:2px;
+	margin-top:35px;
 	padding-right:15px;
+	height:100%;
+	width:180px;
 	
 }
 .trending_second{
 	float:right;
 	background-color: #333;
 	padding-right:15px;
-	margin-top:2px;
-	
+	margin-top:35px;
+	width:180px;
 	
 }
 
@@ -23,7 +25,7 @@
 	height:800px;
 }
 
-.screencast{
+.screencast1{
 	float:left;
 	margin-left:50px;
 	padding-right:10px;
@@ -40,19 +42,22 @@
 }
 
 .trending_image{
-	padding-left:25px;
-	width:120px;
+	padding-left:22px;
+	padding-bottom:10px;
+	width:150px;
 	height:200px;
 	
 }
 
 
 #headname{
-	 	
+	text-padding:10px;
+	text-align:center;	
 	color:white;
+	word-wrap: break-word;
 	
 }
-.image-link:hover{
+.image-link1:hover{
 	border-style: outset;
 	border-color:#e6b91e;
 	border-width:2px;

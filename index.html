@@ -7,39 +7,97 @@
 
 <body >
 
+<div id="screen">
 <header >
-<div>
+<div id="header_block">
 	<ul id="homeList">
-		<li><img src="Images/imdbLogo.png" height=100, width=150><li>
+		<li><img src="Images/imdbLogo.png" height=50, width=150 , style=" padding: 10px;"><li>
 		<li><a href="">Home</a></li>
 		<li class="dropdown"><a href="">Movies</a>
 				<div class="dropdown-content">
 					<a href="#">Upcoming Movies</a>
 					<a href="#">English Movies</a>
 					<a href="#">Hindi Movies</a>
-					<a href="#">TV Series</a>
+					
 				</div>
 		</li>
 		
 		<li>
+			<a href="#">TV Series</a>
+		</li>
+		<li>
 			<div class="search-bar">
 				<input type=text size=50 placeholder="Search Movie...">
-				<button><img src="Images/search.png" height=10px></button>
 			</div>
 		</li>
-		<li style="float:right;">
-			<div class="signup" style="height:8px; margin-top:13px;">
-				<a href="signup.html" >Sign Up</a>
-			</div>	
+		<li>
+			<div>
+				<a href="" class="search_btn" onclick="" ><img src="Images/search.png" height=20px ></a>
+			</div>
 		</li>
-			<li style="float:right; ">
-				<div class="sign-bar">
-					<div style="height:8px;">Username :<input type="text" placeholder="abc@xyz.com">&nbsp&nbsp&nbsp<input type="Submit" value="Submit" ></div>
-					<div style="height:8px;">Password : 	<input type="password" placeholder="********"><a href="" >Forgot Password?</a></div>
-				</div>
+
+		<li style="float:right;">
+			<div class="sign-bar" >
+				<button onclick="document.getElementById('id01').style.display='block'" style=" background-color:#e6b91e; width:100px;">Login</button>
+				<button onclick="document.getElementById('id02').style.display='block'" style=" background-color:#e6b91e; width:100px;">Sign Up</button>
+			</div>
 		</li>
 	</ul>
 </div>
+
+   
+
+<div id="id01" class="modal"> 
+  <form class="modal-content animate" action="">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h1>Sign In</h1>
+    </div>
+
+    <div class="container_signin">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" id="login_btn">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container_signin" style="background-color:#f1f1f1;  margin-bottom:10px;">
+     <a href="#" style="color:red; float:right;">Forgot password?</a>
+    </div>
+  </form>
+</div>
+
+
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h1>Sign Up</h1>
+    </div>
+    <div class="container_signin">
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <input type="checkbox" checked="checked"> Remember me
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="submit" class="signupbtn" >Sign Up</button>
+      </div>
+    </div>
+
+  </form>
+</div>
+
 </header>
 
 <div class="wall">
@@ -217,7 +275,7 @@
 					<div class="middle">
 						<div class="text">
 							<div  class="screencast">
-								<a href="Bahubali.html"><b><font color="black" size="4"><pre>Baahubali 2-The Conclusion</pre></font></b></a><br>
+								<a href="bahubali.html"><b><font color="black" size="4">Baahubali 2-The Conclusion</font></b></a><br>
 								<b><font color="black" size="3">Director : </font></b>	
 								<font face="Times new Roman" size="3" color="black"><a href="https://en.wikipedia.org/wiki/S._S._Rajamouli" style="color:black; text-decoration:none"> S.S. Rajamouli</a></font><br>
 								<b><font color="black" size="3">Producer :</font></b>
@@ -242,7 +300,7 @@
 					<div class="middle">
 						<div class="text">
 							<div  class="screencast">
-								<a href="Bahubali.html"><b><font color="black" size="4"><pre>Sultan- The Conclusion</pre></font></b></a><br>
+								<a href="Bahubali.html"><b><font color="black" size="4">Sultan- The Conclusion</font></b></a><br>
 								<b><font color="black" size="3">Director : </font></b>	
 								<font face="Times new Roman" size="3" color="black"><a href="https://en.wikipedia.org/wiki/S._S._Rajamouli" style="color:black; text-decoration:none">S. S. Rajamouli</a></font><br>
 								<b><font color="black" size="3">Producer :</font></b>
@@ -465,5 +523,6 @@
 	</center>
 </footer>
 
+</div>
 </body>
 </html>
