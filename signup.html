@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>IMDb - Movies Review</title>
+ <link rel="stylesheet" href="index_css.css"></link
+</head>
+<body >
+<header >
+<div>
+	<ul id="homeList">
+		<li><img src="Images/imdbLogo.png" height=100, width=150><li>
+		<li><a href="index.html">Home</a></li>
+		<li class="dropdown"><a href="">Movies</a>
+				<div class="dropdown-content">
+					<a href="#">Upcoming Movies</a>
+					<a href="#">English Movies</a>
+					<a href="#">Hindi Movies</a>
+					<a href="#">TV Series</a>
+				</div>
+		</li>
+		
+		<li>
+			<div class="search-bar">
+				<input type=text size=50 placeholder="Search Movie...">
+				<button><img src="Images/search.png" height=10px></button>
+			</div>
+		</li>
+		
+			<li style="float:right; ">
+				<div class="sign-bar">
+					<div style="height:8px;">Username:<input type="text" placeholder="abc@xyz.com">&nbsp&nbsp&nbsp<input type="Submit" value="Submit" ></div>
+					<div style="height:8px;">Password: <input type="password" placeholder="********"><a href="" >Forgot Password?</a></div>
+				</div>
+		</li>
+	</ul>
+</div>
+</header>
+<div class="wall">
+
+
+<table cellpadding="20" style="margin-left:130px; margin-bottom:35px">
+	<tr>
+		<td style="height=450px, width=400px"><img align="left" src="Images/signup.png" height=300, width=200></td>
+		<td>
+		<form align="center" action="/action_page.php">
+		  <font color="white">First Name :</font><br>
+		  <input type="text" name="firstname" placeholder="First Name" required><br><br>
+		  <font color="white">Last Name :</font><br>
+		  <input type="text" name="firstname" placeholder="Last Name" required><br><br>
+		  <font color="white">Enter Username :</font><br>
+		  <input type="text" name="firstname" placeholder=" Username" required><br><br>
+		  <font color="white">Email ID :</font><br>
+		  <input type="email" placeholder="Email ID" name="email" required><br><br>
+		  <font color="white">Contact No. :</font><br>
+		  <input type="number" placeholder="Enter 10 digit" name="email"><br><br>
+		  <font color="white">Password :</font><br>
+		  <input type="password" placeholder="Password" name="psw" required><br><br>
+		  <font color="white">Reenter Password :</font><br>
+		  <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br><br>
+		  <input type="checkbox" checked="checked"><font color="white"> Remember me
+		  <p>By creating an account you agree to our</font> <a href="#"><font color="white">Terms & Privacy</a>.</font></p>
+		  <font color="white"><input type="submit" value="Sign Up">
+		</form>
+		</td>
+	</tr>
+</table>
+</div>
+<footer style="background-color:#242729; bottom:0px; position:fixed; width:99%; margin-right:30px" >
+	<center>
+		<font color=white>Copyright 2017 IMDb.com, Inc.</font>
+	</center>
+</footer>
+</body>
+
+</html>
