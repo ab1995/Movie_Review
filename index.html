@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>IMDb - Movies Review</title>
- 
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="index_css.css"></link>
+	<title>IMDb - Movies Review</title>
+	
+	<link rel="stylesheet" href="css/footer-distributed.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="index_css.css"></link>
+	<script src="Validation.js"></script>
 </head>
 
 <body >
 
-<div id="screen">
+<div >
 <header >
-<div id="header_block">
-	<ul id="homeList">
-		<li><img src="Images/imdbLogo.png" height=50, width=150 , style=" padding: 10px;"><li>
-		<li><a href="">Home</a></li>
-		<li class="dropdown"><a href="">Movies</a>
-				<div class="dropdown-content">
-					<a href="#">Upcoming Movies</a>
-					<a href="#">English Movies</a>
-					<a href="#">Hindi Movies</a>
-					
-				</div>
+<nav class="navbar navbar-inverse" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><img src="Images/imdbLogo.png" height=40, width=150, style="margin-top:-10px;"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Movies<span class="caret"></span></a>
+        <ul class="dropdown-menu" >
+          <li style="padding:5px;"><a href="#">Upcoming Movies</a></li>
+          <li style="padding:5px;"><a href="#">English Movies</a></li>
+          <li style="padding:5px;"><a href="#">Hindi Movies</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TV Series<span class="caret"></span></a>
+		<ul class="dropdown-menu" >
+          <li style="padding:5px;"><a href="#">Upcoming Series</a></li>
+          <li style="padding:5px;"><a href="#">English Series</a></li>
+          <li style="padding:5px;"><a href="#">Hindi Series</a></li>
+        </ul>
 		</li>
-		
-		<li>
-			<a href="#">TV Series</a>
-		</li>
-		<li>
-			<div class="search-bar">
-				<input type=text size=50 placeholder="Search Movie...">
-			</div>
-		</li>
-		<li>
-			<div>
-				<a href="" class="search_btn" onclick="" ><img src="Images/search.png" height=20px ></a>
-			</div>
-		</li>
-
-		<li style="float:right;">
-			<div class="sign-bar" >
-				<button onclick="document.getElementById('id01').style.display='block'" style=" background-color:#e6b91e; width:100px;">Login</button>
-				<button onclick="document.getElementById('id02').style.display='block'" style=" background-color:#e6b91e; width:100px;">Sign Up</button>
-			</div>
-		</li>
-	</ul>
-</div>
+	  <li><a href="#">Events</a></li>
+    </ul>
+	<form class="navbar-form navbar-left">
+        <div class="input-group" style="margin-top:-10px;">
+            <input type="text" class="form-control" placeholder="Search" style="width:300px;">
+                <span class="input-group-btn">
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#" onclick="document.getElementById('id02').style.display='block'"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#" onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
 
    
 
@@ -84,18 +89,18 @@
     </div>
     <div class="container_signin">
       <label><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+      <input type="text" placeholder="Enter Email" name="email"  id="enteredEmail" required>
 
       <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="Enter Password" name="psw"  id="enteredPass" required>
 
       <label><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat"  id="enteredRepeatPass" required>
       <input type="checkbox" checked="checked"> Remember me
       <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
       <div class="clearfix">
-        <button type="submit" class="signupbtn" >Sign Up</button>
+        <button type="submit" class="signupbtn" onclick="validateCredential()" style="color:black;" >Sign Up</button>
       </div>
     </div>
 
@@ -521,11 +526,26 @@
 
 </div>
 
-<footer style="background-color:#242729;" >
-	<center>
-		<font color=white>Copyright 2017 IMDb.com, Inc.</font>
-	</center>
-</footer>
+		<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+
+			</div>
+
+
+			<div class="footer-left">
+				<div><img src="Images/imdbLogo.png" height=40, width=150, style="margin-top:0px;">	
+				<p style="margin-left:45%; margin-top:-20px;">IMDb Copyright &copy; 2017</p></div>
+			</div>
+
+		</footer>
+
+
 
 </div>
 </body>

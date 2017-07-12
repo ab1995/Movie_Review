@@ -1,58 +1,4 @@
 
-ul {
-    	list-style-type: none;
-    	margin: 0;
-    	padding: 0;
-    	overflow: hidden;
-    	background-color: #333;
-}
-
-li {
-    	float: left;
-}
-
-li a, .dropbtn {
-    	display: inline-block;
-    	color: white;
-    	text-align: center;
-    	padding: 30px 16px;
-    	text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-	color:#e6b91e;
-}
-
-li.dropdown {
-    	display: inline-block;
-}
-
-.dropdown-content {
-    	display: none;
-    	position: absolute;
-    	background-color: #f9f9f9;
-	
-}
-
-.dropdown-content a {
-    	color: black;
-    	padding: 10px 16px;
-		text-decoration: none;
-		display: block;
-    	text-align: left;
-
-		
-}
-
-.dropdown-content a:hover {
-	color:#e6b91e
-}
-
-.dropdown:hover .dropdown-content {
-    	display: block;
-    	color: #e6b91e;
-		z-index:1;
-}
 
 #screen{
 	margin:0;
@@ -169,15 +115,9 @@ button:hover {
 }
 
 
-
-
-
 /*===============================SignIn Window CSS=============================*/
 
-#id01{
 
-
-}
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -189,7 +129,7 @@ input[type=text], input[type=password] {
 
 #login_btn {
     background-color: #e6b91e;
-    color: white;
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
