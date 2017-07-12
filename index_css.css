@@ -264,7 +264,7 @@ span.psw {
 }
 
 
-.container {
+.container_table {
     position: relative;
     width: 50%;
 	
@@ -280,11 +280,11 @@ span.psw {
   transform: translate(-50%, -50%);
 }
 
-.container:hover .image-link {
+.container_table:hover .image-link {
   opacity: 0.3;
 }
 
-.container:hover .middle {
+.container_table:hover .middle {
   opacity: 1;
 }
 
